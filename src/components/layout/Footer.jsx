@@ -51,7 +51,7 @@ export default function Footer() {
             </div>
             <>
                 <div className="absolute w-full min-h-[60vh] md:min-h-[50vh] bg-black opacity-60" />
-                <Image src={bg} alt='img' className='md:h-[50vh] h-[60vh] w-full object-cover' />
+                <Image src={bg} alt='img' className='h-[60vh] md:h-[50vh] w-full object-cover' />
             </>
         </>
     )

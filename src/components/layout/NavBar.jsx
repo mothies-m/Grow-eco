@@ -39,7 +39,7 @@ export default function NavBar() {
     }, []);
 
     return (
-        <nav className="flex justify-between items-center h-[8vh] px-8 bg-primary-green w-full">
+        <nav className="fixed flex justify-between items-center h-[8vh] px-8 z-20 bg-primary-green w-full">
             <Link href={"/"}>
                 <Image src={logo} alt="logo" className="h-12 md:h-16 w-max" />
             </Link>
@@ -73,7 +73,7 @@ export default function NavBar() {
                 ></div>
             </button>
             {viewNav &&
-                <motion.div className="fixed mt-2 py-2 pb-12 right-0 bg-white text-black z-20 shadow-md top-[60px] h-1/3 w-full"
+                <motion.div className="fixed mt-2 py-2 pb-12 right-0 bg-white text-black z-20 shadow-md top-[55px] h-full w-full"
                     variants={{
                         open: {
                             x: "0%",
@@ -90,23 +90,23 @@ export default function NavBar() {
                         duration: 0.3,
                     }}
                 >
-                    <ul className="flex flex-col justify-evenly h-full font-medium text-center text-lg px-4">
+                    <ul className="flex flex-col gap-4 h-full font-medium text-lg py-6 px-4">
                         <li
-                            className={`px-4 py-2 rounded-md`}
+                            className={`px-4 py-2 border-b-[2px] border-gray-200`}
                         >
                             <Link href="/" className={router === "/" ? 'text-[#35b179]' : ""}>
                                 Home
                             </Link>
                         </li>
                         <li
-                            className={`px-4 py-2 rounded-md`}
+                            className={`px-4 py-2 border-b-[2px] border-gray-200`}
                         >
                             <Link href="/about" className={router === "/about" ? 'text-[#35b179]' : ""}>
                                 About
                             </Link>
                         </li>
                         <li
-                            className={`px-4 py-2 rounded-md`}
+                            className={`px-4 py-2 border-b-[2px] border-gray-200`}
                         >
                             <Link href="/dashboard" className={router === "/dashboard" ? 'text-[#35b179]' : ""}>
                                 Dashboard
