@@ -73,7 +73,7 @@ export default function NavBar() {
                 ></div>
             </button>
             {viewNav &&
-                <motion.div className="fixed mt-2 py-2 pb-12 right-0 bg-white text-black z-20 shadow-md top-[55px] h-full w-full"
+                <motion.div className="fixed mt-2 py-2 pb-12 right-0 bg-white text-black z-20 shadow-md top-[50px] h-full w-full"
                     variants={{
                         open: {
                             x: "0%",

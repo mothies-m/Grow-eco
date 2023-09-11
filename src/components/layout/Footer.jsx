@@ -13,7 +13,7 @@ import { poppinsRegular } from '@/app/fonts';
 export default function Footer() {
     return (
         <>
-            <div className={`${poppinsRegular.className} absolute text-white z-10 flex flex-col md:flex-row items-center min-h-[50vh] w-full`}>
+            <div className={`${poppinsRegular.className} absolute text-white z-10 flex flex-col md:flex-row items-center min-h-[60vh] w-full`}>
                 <div className='md:w-[30%] pt-8 md:pt-0 flex flex-col gap-4 justify-center items-center'>
                     <Link href={"/"} >
                         <Image src={logo} alt="logo" className="h-20" />
@@ -21,9 +21,9 @@ export default function Footer() {
                     <p className='font-semibold text-2xl'>FarmSense</p>
                 </div>
                 <div className='bg-white h-[40vh] w-[1px] hidden md:inline-block' />
-                <div className='md:w-[70%] h-[40vh] flex flex-col justify-between'>
+                <div className='w-[70%] flex flex-col justify-between'>
                     <div className='flex gap-4 justify-evenly pt-12 md:pt-8'>
-                        <div className='flex flex-col gap-8 items-start '>
+                        <div className='flex flex-col gap-4 md:gap-8 items-start '>
                             <p className='text-xl uppercase text-gray-300 font-semibold hidden md:inline-block'>Contact</p>
                             <Link href={"mailto:farmsense@gmail.com"} className='flex gap-4 justify-center items-center'><FiMail /><p>farmsense@gmail.com</p></Link>
                             <Link href={"tel:+917010537101"} className='flex gap-4 justify-center items-center'><BsFillTelephoneFill /><p>+91 70105 37101</p></Link>
@@ -38,14 +38,14 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-2 md:gap-6 py-4'>
+                    <div className='flex flex-col gap-2 text-sm md:gap-6 pt-12 md:pt-0'>
                         <p className='hidden md:inline-block text-center md:text-lg text-gray-300'>
                             Copyright © 2023 FarmSense | All Rights Reserved
                         </p>
-                        <p className='md:hidden text-center md:text-lg text-gray-300'>
+                        <p className='md:hidden text-center text-gray-300'>
                             Copyright © 2023 FarmSense
                         </p>
-                        <p className='md:hidden text-center md:text-lg text-gray-300'>All Rights Reserved</p>
+                        <p className='md:hidden text-center text-gray-300'>All Rights Reserved</p>
                     </div>
                 </div>
             </div>

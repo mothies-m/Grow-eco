@@ -48,13 +48,13 @@ export default function FeatureCards() {
         }),
     };
     return (
-        <div className="flex flex-col gap-12 my-14 px-4">
-            <h3 className={`text-5xl md:text-6xl text-center text-primary-green font-bold ${montserrat.className}`}>Our Features</h3>
+        <div className="flex flex-col gap-6 md:gap-12 my-8 md:my-14 px-4">
+            <h3 className={`text-4xl md:text-6xl text-center text-primary-green font-bold ${montserrat.className}`}>Our Features</h3>
             <div className="flex flex-col md:flex-row w-full justify-center items-center md:items-start gap-8 md:gap-20">
                 {contents.map((content, index) => {
                     return (
                         <motion.div
-                            className="flex flex-col items-center px-4 shadow-lg rounded-2xl w-[350px] md:w-[250px] h-[500px]"
+                            className="flex flex-col items-center px-4 shadow-lg rounded-2xl w-[280px] md:w-[250px] h-[500px]"
                             key={index}
                             variants={FadeInAnimationMultiple}
                             initial="initial"
