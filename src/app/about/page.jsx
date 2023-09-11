@@ -1,9 +1,8 @@
 'use client'
 
-import { poppinsRegular } from '../fonts';
+import { poppinsRegular } from '../fonts'
 import { FaLeaf, FaUsers, FaCogs, FaRecycle, FaRocket } from 'react-icons/fa'
 import { motion } from 'framer-motion'
-import Image from 'next/image';
 
 export default function Page() {
     const contents = [
@@ -11,13 +10,13 @@ export default function Page() {
             icon: <FaLeaf />,
             heading: 'Our Journey',
             paragraph:
-                'At Farmsense, we are dedicated to revolutionizing the farming industry with cutting-edge technology and innovative solutions. Our journey began with a vision to empower farmers worldwide with the knowledge and tools they need to optimize their crop yields, conserve resources, and make more informed decisions.',
+                'Our journey began with a vision to empower farmers worldwide with the knowledge and tools they need to optimize their crop yields, conserve resources, and make more informed decisions.',
         },
         {
             icon: <FaUsers />,
             heading: 'Our Team',
             paragraph:
-                'Our success is driven by a team of passionate experts with diverse backgrounds and skills. From agriculture specialists to tech innovators, our team is united by a shared commitment to transforming agriculture into a smarter, more sustainable industry.',
+                'Our project is driven by a team of passionate experts with diverse backgrounds and skills. From agriculture specialists to tech innovators, our team is united by a shared commitment to transforming agriculture into a smarter, more sustainable industry.',
         },
         {
             icon: <FaCogs />,
@@ -44,7 +43,7 @@ export default function Page() {
             icon: <FaLeaf />,
             heading: 'Mathesh D',
             paragraph:
-                'Spcialized in IoT development, circuit designer and developer.',
+                'Spcialized in IoT development, circuit designer & developer.',
         },
         {
             icon: <FaLeaf />,
@@ -108,7 +107,7 @@ export default function Page() {
             <div className="flex flex-col gap-6">
                 {contents.map((content, index) => (
                     <motion.div
-                        className="p-4 border rounded-lg"
+                        className="p-4 border-2 rounded-lg"
                         key={index}
                         variants={FadeInAnimationMultiple}
                         initial="initial"
@@ -117,7 +116,7 @@ export default function Page() {
                             once: true,
                         }}
                         custom={index}
-                        whileHover={{ border: '1px solid rgb(23 70 53)' }}
+                        whileHover={{ border: '2px solid rgb(34 197 94)' }}
                     >
                         <div className="flex items-center">
                             <div className="mr-4 text-2xl text-green-500">{content.icon}</div>
