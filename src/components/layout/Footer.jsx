@@ -1,4 +1,4 @@
-import bg from './assets/footer_bg_res.jpg'
+import bg from './assets/footer_bg.svg'
 import logo from './assets/logo_notext.svg'
 
 import Image from 'next/image'
