@@ -56,7 +56,7 @@ export default function Page() {
             icon: <FaLeaf />,
             heading: 'SriSivaSubramanyan BS',
             paragraph:
-                'Our Agro Spcialist, very well experienced in the agricultural sector.',
+                'Our Agro specialist, very well experienced in the agricultural sector.',
         },
         {
             icon: <FaLeaf />,
@@ -68,7 +68,7 @@ export default function Page() {
             icon: <FaLeaf />,
             heading: 'Vimal Sakkthi VS',
             paragraph:
-                'Full-stack developer, responsible for all web-stuff.',
+                'Full-stack developer, responsible for all web related stuff.',
         },
     ]
 
@@ -130,7 +130,17 @@ export default function Page() {
                 ))}
             </div>
             <div className='flex flex-col gap-8 py-16'>
-                <h3 className='text-3xl font-bold'>Team Members</h3>
+                <motion.h3
+                    className='text-3xl font-bold'
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    whileInView={{ opacity: 1 }}
+                    viewport={{
+                        once: true,
+                    }}
+                >
+                    Team Members
+                </motion.h3>
                 <div className="flex flex-wrap justify-center gap-12">
                     {cardContents.map((content, index) => {
                         return (
