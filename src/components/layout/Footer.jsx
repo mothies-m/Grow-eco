@@ -13,7 +13,7 @@ import { poppinsRegular } from '@/app/fonts';
 export default function Footer() {
     return (
         <>
-            <div className={`${poppinsRegular.className} absolute text-white z-10 flex flex-col md:flex-row items-center min-h-[60vh] w-full`}>
+            <div className={`${poppinsRegular.className} absolute text-white z-10 flex flex-col md:flex-row min-h-[50vh] items-center w-full`}>
                 <div className='md:w-[30%] pt-8 md:pt-0 flex flex-col gap-4 justify-center items-center'>
                     <Link href={"/"} >
                         <Image src={logo} alt="logo" className="h-20" />
@@ -21,8 +21,8 @@ export default function Footer() {
                     <p className='font-semibold text-2xl'>FarmSense</p>
                 </div>
                 <div className='bg-white h-[40vh] w-[1px] hidden md:inline-block' />
-                <div className='w-[70%] flex flex-col justify-between'>
-                    <div className='flex gap-4 justify-evenly pt-12 md:pt-8'>
+                <div className='w-[70%] md:w-full flex flex-col justify-between'>
+                    <div className='flex gap-4 justify-evenly pt-12 md:pt-0'>
                         <div className='flex flex-col gap-4 md:gap-8 items-start '>
                             <p className='text-xl uppercase text-gray-300 font-semibold hidden md:inline-block'>Contact</p>
                             <Link href={"mailto:farmsense@gmail.com"} className='flex gap-4 justify-center items-center'><FiMail /><p>farmsense@gmail.com</p></Link>
@@ -38,7 +38,7 @@ export default function Footer() {
                             </ul>
                         </div>
                     </div>
-                    <div className='flex flex-col gap-2 text-sm md:gap-6 pt-12 md:pt-0'>
+                    <div className='flex flex-col gap-2 text-sm pt-12'>
                         <p className='hidden md:inline-block text-center md:text-lg text-gray-300'>
                             Copyright © 2023 FarmSense | All Rights Reserved
                         </p>

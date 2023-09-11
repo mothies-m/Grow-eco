@@ -9,14 +9,14 @@ import { motion } from "framer-motion"
 
 export default function HomePage() {
     return (
-        <div className="h-[92vh] w-full">
+        <div className="h-[90vh] w-full">
             <div className="w-full h-full flex items-center justify-center">
-                <div className={`absolute text-white z-10 text-3xl lg:text-5xl xl:text-7xl md:w-1/2 text-center font-semibold ${montserrat.className} flex flex-col md:gap-4`}>
+                <div className={`absolute text-white z-10 text-3xl lg:text-5xl xl:text-7xl md:w-2/3 text-center font-semibold ${montserrat.className} flex flex-col gap-2 md:gap-0 leading-[3rem] md:leading-0`}>
                     <p>The Role of Technology</p>
-                    <p className="leading-snug">in Revolutionizing Agriculture</p>
+                    <p className="md:leading-[5rem]">in Revolutionizing Agriculture</p>
                 </div>
-                <div className="absolute w-full h-[92vh] bg-black opacity-50"></div>
-                <Image src={heroBg} alt="img" className="h-[92vh] w-full object-cover" /></div>
+                <div className="absolute w-full h-[90vh] bg-black opacity-50"></div>
+                <Image src={heroBg} alt="img" className="h-[90vh] w-full object-cover" /></div>
             <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}

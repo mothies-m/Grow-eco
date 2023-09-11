@@ -39,11 +39,11 @@ export default function NavBar() {
     }, []);
 
     return (
-        <nav className="fixed flex justify-between items-center h-[8vh] px-8 z-20 bg-primary-green w-full">
+        <nav className="flex justify-between items-center min-h-[10vh] px-8 z-20 bg-primary-green w-full">
             <Link href={"/"}>
                 <Image src={logo} alt="logo" className="h-12 md:h-16 w-max" />
             </Link>
-            <ul className={`hidden md:flex justify-around text-white font-poppins gap-20 ${inder.className} text-2xl`}>
+            <ul className={`hidden h-full md:flex justify-around text-white font-poppins gap-20 ${inder.className} text-2xl`}>
                 <li><Link href={"/"}
                     className={router === "/" ? 'text-[#09F78B]' : ""}>
                     Home
