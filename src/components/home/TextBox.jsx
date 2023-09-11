@@ -3,8 +3,8 @@ import { poppinsBold, poppinsRegular } from "@/app/fonts"
 export default function TextBox() {
 
     const content = {
-        heading: 'Invest in Farms with Ease, Seamlessly Connecting You to Agriculture.',
-        paragraph: 'Invest confidently in the agriculture industry. Explore our platform, find exciting farm investment opportunities, and enjoy the benefits of a thriving sector. Start growing your wealth through agricultural investments today.'
+        heading: 'Unlock the Boundless Potential of Modern Agriculture.',
+        paragraph: 'Explore real-time soil health insights, precision agriculture tools, pest management, and more. Empower yourself with the tools and knowledge to optimize your farming practices and cultivate a brighter future for agriculture.'
     }
 
     return (
