@@ -39,12 +39,13 @@ export default function Weather() {
             .catch(err => alert(err, "Unable to fetch weather!"));
     };
 
+    console.log(address);
     return (
         <main className="flex flex-col items-center gap-4">
             <button onClick={displayLocation} className="bg-green-700 rounded-md py-1 px-4 text-xl text-white hover:bg-green-800 transition-all">Fetch Weather</button>
             {temperature && (
                 <div className="flex gap-1 text-xl">
-                    <p>In {address.city || address.city_district},</p>
+                    {(address?.city || address?.postcode) && <p> In {address.city || address.postcode},</p>}
                     <p>the temperature is <span className=" font-bold ">{temperature || ""} °C</span> </p>
                     <p>but feels like <span className=" font-bold ">{tempFeelsLike || ""} °C</span></p>
                 </div>
