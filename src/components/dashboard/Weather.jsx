@@ -29,6 +29,7 @@ export default function Weather() {
             if (err.response.status === 400) {
                 alert("Allow persmission to get your coordinates!")
             }
+            return;
         }
         await axios.get(`https://api.openweathermap.org/data/2.5/weather/?lat=${latitude}&lon=${longitude}&units=metric&APPID=${process.env.NEXT_PUBLIC_API_KEY}`)
             .then(result => {
@@ -39,11 +40,16 @@ export default function Weather() {
     };
 
     return (
-        <main className="flex flex-col items-center gap-20">
-            <button onClick={displayLocation}>Click me</button>
-            <p>Hi. You are from {address.city || address.city_district}</p>
-            <p>The temperature is {temperature || ""} °C</p>
-            <p>But the temperature feels like {tempFeelsLike || ""} °C</p>
+        <main className="flex flex-col items-center gap-4">
+            <button onClick={displayLocation} className="bg-green-700 rounded-md py-1 px-4 text-xl text-white hover:bg-green-800 transition-all">Fetch Weather</button>
+            {temperature && (
+                <div className="flex gap-1 text-xl">
+                    <p>In {address.city || address.city_district},</p>
+                    <p>the temperature is <span className=" font-bold ">{temperature || ""} °C</span> </p>
+                    <p>but feels like <span className=" font-bold ">{tempFeelsLike || ""} °C</span></p>
+                </div>
+            )
+            }
         </main>
     )
 }
