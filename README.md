@@ -1,10 +1,10 @@
-# Farmsense: Revolutionizing Agriculture with Technology
+# FarmSense: Revolutionizing Agriculture with Technology
 
 # Website : [farmsense.vercel.app](https://farmsense.vercel.app)
 
-Welcome to the world of Farmsense, solution for modern agriculture!
+Welcome to the world of FarmSense, solution for modern agriculture!
 
-At Farmsense, we are dedicated to revolutionizing the farming industry with cutting-edge technology and innovative solutions.
+At FarmSense, we are dedicated to revolutionizing the farming industry with cutting-edge technology and innovative solutions.
 
 ## Our Mission
 
@@ -18,7 +18,7 @@ Our advanced software uses the power of AI and data analytics to provide real-ti
 
 ### 2. Precision Agriculture
 
-Farmsense's smart sensors and monitoring systems enable precision agriculture like never before. You can fine-tune your irrigation, fertilization, and pest control strategies based on accurate data, leading to higher yields and resource efficiency.
+FarmSense's smart sensors and monitoring systems enable precision agriculture like never before. You can fine-tune your irrigation, fertilization, and pest control strategies based on accurate data, leading to higher yields and resource efficiency.
 
 ### 3. Pest Management
 
