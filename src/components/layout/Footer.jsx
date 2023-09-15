@@ -25,7 +25,7 @@ export default function Footer() {
                     <div className='flex gap-4 justify-evenly pt-12 md:pt-0'>
                         <div className='flex flex-col gap-4 md:gap-8 items-start '>
                             <p className='text-xl uppercase text-gray-300 font-semibold hidden md:inline-block'>Contact</p>
-                            <Link href={"mailto:farmsense@gmail.com"} className='flex gap-4 justify-center items-center'><FiMail /><p>farmsense@gmail.com</p></Link>
+                            <Link href={"mailto:farmsense5@gmail.com"} className='flex gap-4 justify-center items-center'><FiMail /><p>farmsense5@gmail.com</p></Link>
                             <Link href={"tel:+917010537101"} className='flex gap-4 justify-center items-center'><BsFillTelephoneFill /><p>+91 70105 37101</p></Link>
                             <Link href={"https://goo.gl/maps/FEWhmjKYhc565eSY8"} className='flex gap-4 justify-center items-center'><FaLocationDot /><p>Tiruchirappalli, Tamil Nadu</p></Link>
                         </div>
