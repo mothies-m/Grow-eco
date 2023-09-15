@@ -32,14 +32,14 @@ export default function DashboardGraph() {
         labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
         datasets: [
             {
-                label: "Moisture",
+                label: "नमी बनाम समय ग्राफ",
                 data: [33, 53, 85, 41, 44, 65],
                 fill: true,
                 backgroundColor: "rgba(75,192,192,0.2)",
                 borderColor: "rgba(75,192,192,1)"
             },
             {
-                label: "Humidity",
+                label: "नमी",
                 data: [33, 25, 35, 51, 54, 76],
                 fill: false,
                 borderColor: "#742774"
@@ -49,20 +49,20 @@ export default function DashboardGraph() {
 
     return (
         <>
-            <p className={`flex items-center gap-2 text-3xl text-start font-semibold`}>This is the dashboard of Farmer's perspective.</p>
+            <p className={`flex items-center gap-2 text-3xl text-start font-semibold`}>किसान सेवा अनुप्रयोग</p>
             <div className="flex flex-wrap w-3/4 justify-between gap-20 py-8 px-8 border-2 rounded-lg">
                 <div className="flex flex-col gap-4">
-                    <p className="text-3xl text-center">Moisture</p>
+                    <p className="text-3xl text-center">मिट्टी की नमी</p>
                     <div>
                         <CircularProgressbar value={moisture} text={`${moisture}%`} suppressHydrationWarning />
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <p className="text-3xl text-center">Humidity</p>
+                    <p className="text-3xl text-center">नमी</p>
                     <CircularProgressbar value={humidity} text={`${humidity}%`} suppressHydrationWarning />
                 </div>
                 <div className="flex flex-col gap-4">
-                    <p className="text-3xl text-center">Pump Indicator</p>
+                    <p className="text-3xl text-center">मोटर पंप की स्थिति</p>
                     <div className="flex gap-6 py-6">
                         <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-red-400 ${pumpStatus && "opacity-30"} `} >{!pumpStatus && "OFF"}</div>
                         <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-green-400 ${!pumpStatus && "opacity-30"}`}
@@ -70,13 +70,13 @@ export default function DashboardGraph() {
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <p className="text-3xl text-center">Weather</p>
+                    <p className="text-3xl text-center">मौसम</p>
                     <div>
                         <CircularProgressbar value={moisture} text={`${moisture}°C`} suppressHydrationWarning />
                     </div>
                 </div>
                 <div className="flex flex-col gap-6 w-1/2">
-                    <p className="text-3xl text-center">Moisture Humidity vs Time</p>
+                    <p className="text-3xl text-center">नमी बनाम समय ग्राफ</p>
                     <Line data={data} suppressHydrationWarning />
                 </div>
             </div>
