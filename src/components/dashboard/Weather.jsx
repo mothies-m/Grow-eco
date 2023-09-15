@@ -38,8 +38,6 @@ export default function Weather() {
             })
             .catch(err => alert(err, "Unable to fetch weather!"));
     };
-
-    console.log(address);
     return (
         <main className="flex flex-col items-center gap-4">
             <button onClick={displayLocation} className="bg-green-700 rounded-md py-1 px-4 text-xl text-white hover:bg-green-800 transition-all">Fetch Weather</button>
