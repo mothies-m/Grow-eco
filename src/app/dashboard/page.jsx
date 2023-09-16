@@ -8,7 +8,7 @@ import DashboardGraphHindi from "@/components/dashboard/DashboardGraphHindi";
 import { BsGlobe } from "react-icons/bs";
 import { useState } from "react";
 
-export default function page() {
+export default function Page() {
 
     const [language, setLanguage] = useState("english");
     const handleChange = (e) => {

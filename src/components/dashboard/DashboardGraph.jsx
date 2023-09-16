@@ -49,7 +49,7 @@ export default function DashboardGraph() {
 
     return (
         <>
-            <p className={`flex items-center gap-2 text-3xl text-start font-semibold`}>This is the dashboard of Farmer's perspective.</p>
+            <p className={`flex items-center gap-2 text-3xl text-start font-semibold`}>This is the dashboard of Farmer&apos;s perspective.</p>
             <div className="flex flex-wrap w-3/4 justify-between gap-20 py-8 px-8 border-2 rounded-lg">
                 <div className="flex flex-col gap-4">
                     <p className="text-3xl text-center">Moisture</p>
