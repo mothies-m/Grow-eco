@@ -72,12 +72,18 @@ export default function DashboardGraph() {
                 <div className="flex flex-col gap-4">
                     <p className="text-3xl text-center">Precipitation</p>
                     <div>
-                        <CircularProgressbar value={moisture} text={`${moisture}%`} suppressHydrationWarning />
+                        <CircularProgressbar value={"70"} text={`70%`} suppressHydrationWarning />
                     </div>
                 </div>
                 <div className="flex flex-col gap-6 w-1/2">
                     <p className="text-3xl text-center">Moisture Humidity vs Time</p>
                     <Line data={data} suppressHydrationWarning />
+                </div>
+                <div className="flex flex-col gap-6 w-1/2">
+                    <p className="text-3xl text-center">NPK Values</p>
+                    <p>Nitrogen : 0%</p>
+                    <p>Phosphorus : 0%</p>
+                    <p>Potassium : 0%</p>
                 </div>
             </div>
         </>
