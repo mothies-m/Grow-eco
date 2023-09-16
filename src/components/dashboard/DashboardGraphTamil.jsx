@@ -65,9 +65,9 @@ export default function DashboardGraph() {
                 <div className="flex flex-col gap-4">
                     <p className="text-3xl text-center">மோட்டார் நிலை</p>
                     <div className="flex gap-6 py-6">
-                        <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-red-400 ${pumpStatus && "opacity-30"} `} >{!pumpStatus && "OFF"}</div>
+                        <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-red-400 ${pumpStatus && "opacity-30"} `} >{!pumpStatus && "நிருத்து"}</div>
                         <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-green-400 ${!pumpStatus && "opacity-30"}`}
-                        >{pumpStatus && "ON"}</div>
+                        >{pumpStatus && "இயங்கு"}</div>
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
@@ -81,7 +81,6 @@ export default function DashboardGraph() {
                     <Line data={data} suppressHydrationWarning />
                 </div>
             </div>
-            <Toaster />
         </>
     )
 }

@@ -64,15 +64,15 @@ export default function DashboardGraph() {
                 <div className="flex flex-col gap-4">
                     <p className="text-3xl text-center">मोटर पंप की स्थिति</p>
                     <div className="flex gap-6 py-6">
-                        <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-red-400 ${pumpStatus && "opacity-30"} `} >{!pumpStatus && "OFF"}</div>
+                        <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-red-400 ${pumpStatus && "opacity-30"} `} >{!pumpStatus && "चालू"}</div>
                         <div className={`flex justify-center items-center w-20 h-20 rounded-full bg-green-400 ${!pumpStatus && "opacity-30"}`}
-                        >{pumpStatus && "ON"}</div>
+                        >{pumpStatus && "बंद"}</div>
                     </div>
                 </div>
                 <div className="flex flex-col gap-4">
-                    <p className="text-3xl text-center">मौसम</p>
+                    <p className="text-3xl text-center">वर्षण</p>
                     <div>
-                        <CircularProgressbar value={moisture} text={`${moisture}°C`} suppressHydrationWarning />
+                        <CircularProgressbar value={moisture} text={`${moisture}%`} suppressHydrationWarning />
                     </div>
                 </div>
                 <div className="flex flex-col gap-6 w-1/2">
