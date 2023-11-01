@@ -1,7 +1,5 @@
 import bg from './assets/footer_bg.svg'
 
-import logo from '../../app/image.png'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -15,12 +13,6 @@ export default function Footer() {
     return (
         <>
             <div className={`${poppinsRegular.className} absolute text-white z-10 flex flex-col md:flex-row min-h-[50vh] items-center w-full`}>
-                <Image
-                src={logo}
-                width="85"
-                height="20"
-                className='cursor-pinter pl-14'
-                />
                 <div className='md:w-[30%] pt-8 md:pt-0 flex flex-col gap-4 justify-center items-center'>
                     <p className='font-semibold text-2xl'>GrowEco</p>
                 </div>
@@ -29,7 +21,7 @@ export default function Footer() {
                     <div className='flex gap-4 justify-evenly pt-12 md:pt-0'>
                         <div className='flex flex-col gap-4 md:gap-8 items-start '>
                             <p className='text-xl uppercase text-gray-300 font-semibold hidden md:inline-block'>Contact</p>
-                            <Link href={"mailto:farmsense5@gmail.com"} className='flex gap-4 justify-center items-center'><FiMail /><p>farmsense5@gmail.com</p></Link>
+                            <Link href={"mailto:farmsense5@gmail.com"} className='flex gap-4 justify-center items-center'><FiMail /><p>groweco5@gmail.com</p></Link>
                             <Link href={"tel:+917010537101"} className='flex gap-4 justify-center items-center'><BsFillTelephoneFill /><p>+91 70105 37101</p></Link>
                             <Link href={"https://goo.gl/maps/FEWhmjKYhc565eSY8"} className='flex gap-4 justify-center items-center'><FaLocationDot /><p>Tiruchirappalli, Tamil Nadu</p></Link>
                         </div>
@@ -44,10 +36,10 @@ export default function Footer() {
                     </div>
                     <div className='flex flex-col gap-2 text-sm pt-12'>
                         <p className='hidden md:inline-block text-center md:text-lg text-gray-300'>
-                            Copyright © 2023 FarmSense | All Rights Reserved
+                            Copyright © 2023 GrowEco | All Rights Reserved
                         </p>
                         <p className='md:hidden text-center text-gray-300'>
-                            Copyright © 2023 FarmSense
+                            Copyright © 2023 GrowEco
                         </p>
                         <p className='md:hidden text-center text-gray-300'>All Rights Reserved</p>
                     </div>
