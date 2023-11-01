@@ -1,5 +1,6 @@
 import bg from './assets/footer_bg.svg'
-import logo from './assets/logo_notext.svg'
+
+import logo from '../../app/image.png'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -14,11 +15,14 @@ export default function Footer() {
     return (
         <>
             <div className={`${poppinsRegular.className} absolute text-white z-10 flex flex-col md:flex-row min-h-[50vh] items-center w-full`}>
+                <Image
+                src={logo}
+                width="85"
+                height="20"
+                className='cursor-pinter pl-14'
+                />
                 <div className='md:w-[30%] pt-8 md:pt-0 flex flex-col gap-4 justify-center items-center'>
-                    <Link href={"/"} >
-                        <Image src={logo} alt="logo" className="h-20" />
-                    </Link>
-                    <p className='font-semibold text-2xl'>FarmSense</p>
+                    <p className='font-semibold text-2xl'>GrowEco</p>
                 </div>
                 <div className='bg-white h-[40vh] w-[1px] hidden md:inline-block' />
                 <div className='w-[70%] md:w-full flex flex-col justify-between'>

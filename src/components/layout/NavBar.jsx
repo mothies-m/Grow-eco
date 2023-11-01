@@ -1,6 +1,6 @@
 'use client'
 
-import logo from './assets/logo.svg'
+import logo from '../../app/image.png'
 
 import Image from "next/image"
 import Link from "next/link"
@@ -40,9 +40,14 @@ export default function NavBar() {
 
     return (
         <nav className="flex justify-between items-center min-h-[10vh] px-8 z-20 bg-primary-green w-full">
-            <Link href={"/"}>
-                <Image src={logo} alt="logo" className="h-12 md:h-16 w-max" />
-            </Link>
+            <link href="/" /> 
+            <Image 
+            src={logo}
+            width="60"
+            height="25"
+            className='cursor-pointer'
+            priority
+            /> 
             <ul className={`hidden h-full md:flex justify-around text-white font-poppins gap-20 ${inder.className} text-2xl`}>
                 <li><Link href={"/"}
                     className={router === "/" ? 'text-[#09F78B]' : ""}>

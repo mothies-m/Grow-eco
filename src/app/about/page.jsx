@@ -4,13 +4,6 @@ import { poppinsRegular } from '../fonts'
 import { FaLeaf, FaUsers, FaCogs, FaRecycle, FaRocket } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 
-import mathesh from './assets/mathesh.jpeg'
-import mothies from './assets/mothies.jpeg'
-import siva from './assets/siva.jpeg'
-import vignesh from './assets/vignesh.jpg'
-import vimal from './assets/vimal.jpg'
-import Image from 'next/image'
-
 export default function Page() {
     const contents = [
         {
@@ -45,39 +38,7 @@ export default function Page() {
         },
     ];
 
-    const cardContents = [
-        {
-            icon: mathesh,
-            heading: 'Mathesh D',
-            paragraph:
-                'Spcialized in IoT development, circuit designer & developer.',
-        },
-        {
-            icon: mothies,
-            heading: 'Mothieswaran M',
-            paragraph:
-                'UI desinger, stepping into the field of front-end development.',
-        },
-        {
-            icon: siva,
-            heading: 'SriSivaSubramanyan',
-            paragraph:
-                'Our Agro specialist, very well experienced in the agricultural sector.',
-        },
-        {
-            icon: vignesh,
-            heading: 'Vignesh D',
-            paragraph:
-                'Designer, IoT developer, and content writer & media manager.',
-        },
-        {
-            icon: vimal,
-            heading: 'Vimal Sakkthi VS',
-            paragraph:
-                'Full-stack developer, responsible for all web related stuff.',
-        },
-    ]
-
+    
     const FadeInAnimationMultiple = {
         initial: {
             opacity: 0,
@@ -135,42 +96,6 @@ export default function Page() {
                     </motion.div>
                 ))}
             </div>
-            <div className='flex flex-col gap-8 py-16'>
-                <motion.h3
-                    className='text-3xl font-bold'
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{
-                        once: true,
-                    }}
-                >
-                    Team Members
-                </motion.h3>
-                <div className="flex flex-wrap justify-center gap-12">
-                    {cardContents.map((content, index) => {
-                        return (
-                            <motion.div
-                                className="bg-primary-green p-4 h-[400px] w-[240px] border border-primary-green rounded-lg shadow-lg flex flex-col justify-around md:items-center"
-                                key={index}
-                                variants={FadeInAnimation}
-                                initial="initial"
-                                whileInView="animate"
-                                viewport={{
-                                    once: true,
-                                }}
-                                custom={index}
-                            >
-                                <Image src={content.icon} alt='image' className='rounded-[50%] h-32 w-32 object-cover' />
-                                <div className='text-center'>
-                                    <h3 className="text-lg text-[#CECECE] font-semibold mb-6">{content.heading}</h3>
-                                    < p className="text-sm text-[#CECECE]" > {content.paragraph}</p>
-                                </div>
-                            </motion.div>
-                        )
-                    })}
-                </div >
-            </div >
         </div >
     );
 }
