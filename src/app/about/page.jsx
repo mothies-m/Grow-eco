@@ -70,7 +70,7 @@ export default function Page() {
 
     return (
         <div className={`bg-white p-4 lg:p-8 ${poppinsRegular.className}`}>
-            <h1 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">About Farmsense</h1>
+            <h1 className="text-3xl lg:text-4xl font-bold mb-4 lg:mb-6">About GrowEco</h1>
             <h2 className="text-xl lg:text-2xl font-semibold mb-6">Unlocking the Boundless Potential of Modern Agriculture</h2>
             <div className="flex flex-col gap-6">
                 {contents.map((content, index) => (
