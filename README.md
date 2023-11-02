@@ -1,6 +1,6 @@
-# FarmSense: Revolutionizing Agriculture with Technology
+# GrowEco: Revolutionizing Agriculture with Technology
 
-# Website : [farmsense.vercel.app](https://farmsense.vercel.app)
+# Website : [grow-eco.vercel.app](https://grow-eco.vercel.app)
 
 Welcome to the world of FarmSense, solution for modern agriculture!
 
